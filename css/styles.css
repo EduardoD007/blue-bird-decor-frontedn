@@ -1,0 +1,599 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 22px;
+  color: #0e2739;
+}
+
+h2 {
+  font-size: 18px;
+  font-style: normal;
+  font-family: "Irish Grover", sans-serif;
+  color: #0e2739;
+}
+
+body {
+  background-color: rgb(150, 144, 144);
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  background-color: #ea6da3;
+  width: 100%;
+  height: 10%;
+}
+
+footer {
+  background-color: #4b83cc;
+  width: 100%;
+  height: 5%;
+  padding-top: 10px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+}
+
+.img_logo {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 60px;
+  top: 25px;
+}
+
+.texto_logo {
+  left: 100px;
+  top: 40px;
+  color: #0e2739;
+  font-size: 23px;
+  font-family: "Irish Grover", sans-serif;
+  position: absolute;
+}
+
+.texto_nome_loja {
+  float: right;
+  color: #ffffff;
+  font-size: 22px;
+  font-family: "Irish Grover", sans-serif;
+  text-wrap-mode: nowrap;
+  padding-right: 20px;
+  padding-top: 40px;
+}
+
+.container {
+  display: flex;
+  background-color: #1f6ea7;
+  width: 100%;
+  min-height: 85%;
+}
+
+.container__menu {
+  background-color: #0e2739;
+  width: 10%;
+  min-height: 100%;
+}
+
+.menu_texto {
+  color: #e3ebf4;
+  text-decoration: none;
+}
+
+.menu_item--top {
+  float: left;
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  align-content: center;
+  background-color: #4b83cc;
+  border: #ea6da3;
+  border-width: 1px;
+  border-style: solid;
+  box-sizing: border-box;
+  border-left: 0cap;
+  border-right: 0cap;
+  border-bottom: 0cap;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.menu_item--top:hover {
+  background-color: #e09bd7;
+}
+
+.menu_item--top:active {
+  background-color: #eb83dd;
+  border: 1px #bbb5bb solid;
+  border-style: inset;
+}
+
+.menu_item--down {
+  float: left;
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  align-content: center;
+  background-color: #4b83cc;
+  border: #ea6da3;
+  border-width: 1px;
+  border-style: solid;
+  box-sizing: border-box;
+  border-left: 0cap;
+  border-right: 0cap;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.menu_item--down:hover {
+  background-color: #e09bd7;
+}
+
+.menu_item--down:active {
+  background-color: #eb83dd;
+  border: 1px #bbb5bb solid;
+  border-style: inset;
+}
+
+.container__conteudo {
+  background: repeating-linear-gradient(
+    0deg,
+    #ffffff,
+    #ffffff 2px,
+    #fffdff 2px,
+    #bbb5bb 4px
+  );
+  width: 90%;
+  min-height: 100%;
+}
+
+.container_formulario_conteudo {
+  background-color: #f3e6ef;
+  padding: 20px;
+  margin: auto;
+  margin-top: 35px;
+  margin-bottom: 30px;
+  border: 1px solid #0e2739;
+  border-radius: 10px;
+  width: 60%;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.formulario_conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.formulario_conteudo__container_campos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: fit-content;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-family: "Irish Grover", sans-serif;
+}
+
+.formulario_conteudo__espaco {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+.formulario_conteudo__line {
+  margin-bottom: 10px;
+  width: 100%;
+  border-color: #e469bf;
+  border-top-width: 0cap;
+  border-bottom-width: 1px;
+  border-style: solid;
+}
+
+.formulario_conteudo__botao_submit {
+  align-self: self-end;
+  background-color: #f4bed6;
+  border-color: #262966;
+  border-width: 0px;
+  border-radius: 1px;
+  color: #0e2739;
+  width: 90px;
+  height: 25px;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.3);
+}
+
+.formulario_conteudo__botao_submit:hover {
+  cursor: pointer;
+}
+
+.formulario_conteudo__botao_submit:active {
+  background-color: #f792bf;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.formulario_conteudo__botao_submit--2 {
+  align-self: self-end;
+  background-color: #cf86a7;
+  border-color: #262966;
+  border-width: 1px;
+  border-radius: 5px;
+  color: #0e2739;
+  width: 90px;
+  height: 25px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario_campos {
+  margin-top: 3px;
+  padding: 5px;
+  font-size: 12px;
+  background-color: #ffffff;
+  border: 1px solid #0e2739;
+  border-radius: 2px;
+
+  font-family: "Irish Grover", sans-serif;
+}
+
+.formulario_texto--h1 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-style: italic;
+  font-family: "Irish Grover", sans-serif;
+  color: #0e2739;
+  text-shadow: 2px 2px #dfc4d2;
+}
+
+.formulario_texto--h2 {
+  margin-bottom: 12px;
+  font-size: 17px;
+  font-style: italic;
+  font-family: "Irish Grover", sans-serif;
+  color: #0e2739;
+}
+
+.formulario_campos_id {
+  margin-bottom: 12px;
+  font-size: 17px;
+  font-style: italic;
+  font-family: "Irish Grover", sans-serif;
+  color: #0e2739;
+  text-shadow: 2px 2px #dfc4d2;
+}
+
+.titulos_colunas_tabela {
+  width: 100%;
+  height: 30px;
+  background-color: #f4bed6;
+  border-color: #ea6da3;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-style: solid;
+  font-size: 1x;
+  font-family: "Irish Grover", sans-serif;
+  color: #0e2739;
+}
+
+.tabela_conteudo {
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: center;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-color: #ea6da3;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0cap;
+  border-right-width: 0cap;
+  font-size: 12px;
+  font-family: "Irish Grover", sans-serif;
+  color: #0e2739;
+}
+
+th {
+  font-family: "Irish Grover", sans-serif;
+  font-size: 14px;
+  color: #7e0748;
+  text-align: center;
+  
+}
+
+.th-botao-editar {
+  height: 25px;
+  text-align: left;
+  padding: 2px;
+  padding-left: 10px;
+  font-family: "Irish Grover", sans-serif;
+}
+.th-botao-excluir {
+  height: 25px;
+  text-align: right;
+  padding: 2px;
+  font-family: "Irish Grover", sans-serif;
+}
+
+.td-01 {
+  justify-content: center;
+  border-bottom: 1px inset #ea6da3;
+  border-collapse: collapse;
+  height: 25px;
+  text-align: center;
+  padding: 5px;
+  font-family: "Irish Grover", sans-serif;
+  font-size: 12px;
+}
+
+.td-01-editada {
+  justify-content: center;
+  border-bottom: 1px inset #ea6da3;
+  border-collapse: collapse;
+  height: 25px;
+  text-align: center;
+  color:#083c9e;
+  font-weight:bolder;
+  font-style:italic;
+  padding: 5px;
+  font-family: "Irish Grover", sans-serif;
+  font-size: 12px;
+}
+
+.td-input {
+  background-color: #d2e3f0;
+  margin-top: 3px;
+  padding: 4px;
+  font-size: 12px;
+  border: 1px solid #0e2739;
+  border-radius: 2px;
+  text-align: center;
+  font-family: "Irish Grover", sans-serif;
+}
+
+.td-excluir-categoria {
+  border-bottom: 1px inset #ea6da3;
+  border-collapse: collapse;
+  height: 25px;
+  text-align: center;
+  padding: 2px;
+}
+
+.td-excluir-subcategoria {
+  border-bottom: 1px inset #ea6da3;
+  border-collapse: collapse;
+  height: 25px;
+  text-align: center;
+  padding: 2px;
+}
+
+.td-botao-editar {
+  border-bottom: 1px inset #ea6da3;
+  border-collapse: collapse;
+  height: 25px;
+  text-align: center;
+  padding: 2px;
+  padding-left: 0px;
+  font-family: "Irish Grover", sans-serif;
+}
+
+.td-botao-valor {
+  border-bottom: 1px inset #ea6da3;
+  border-collapse: collapse;
+  height: 25px;
+  text-align: right;
+  padding: 2px;
+  padding-left: 10px;
+  font-family: "Irish Grover", sans-serif;
+}
+
+.td-botao-excluir {
+  border-bottom: 1px inset #ea6da3;
+  border-collapse: collapse;
+  height: 25px;
+  text-align: left;
+  padding: 2px;
+  font-family: "Irish Grover", sans-serif;
+}
+
+.td-confirmar {
+  border-bottom: 1px inset #ea6da3;
+  border-collapse: collapse;
+  height: 25px;
+  text-align: right;
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 5px;
+  font-family: "Irish Grover", sans-serif;
+}
+
+.td-botao-confirmar {
+  margin-left: 10px;
+  background-color: #94e9a7;
+  border-color: #262966;
+  border-width: 1px;
+  border-radius: 1px;
+  color: #0e2739;
+  width: 90px;
+  height: 20px;
+}
+
+.td-botao-confirmar:hover {
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #5be478;
+  border-color: #262966;
+  border-width: 1px;
+  border-radius: 1px;
+  color: #0e2739;
+  width: 90px;
+  height: 20px;
+}
+
+.td-botao-cancelar {
+  margin-left: 10px;
+  background-color: #f4bed6;
+  border-color: #262966;
+  border-width: 1px;
+  border-radius: 1px;
+  color: #0e2739;
+  width: 90px;
+  height: 20px;
+}
+
+.td-botao-cancelar:hover {
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: #f8abce;
+  border-color: #262966;
+  border-width: 1px;
+  border-radius: 1px;
+  color: #0e2739;
+  width: 90px;
+  height: 20px;
+}
+
+.tr-01 {
+  background-color: #e9ecf3;
+  text-align: center;
+}
+
+.tr-editar {
+  background-color: #d0d9ec;
+  padding-right: 80px;
+}
+
+.botao-excluir {
+  border: #0e2739;
+  cursor: pointer;
+}
+
+.botao-excluir:hover {
+  border: #0e2739;
+  cursor: pointer;
+}
+
+.botao-excluir img {
+  width: 20px;
+  height: 20px;
+}
+
+.menu_central_container {
+  display: flex;
+  margin: auto;
+  margin-top: 100px;
+  width: fit-content;
+}
+
+.menu_central__container_imagens {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 380px;
+}
+
+.menu_central__img {
+  background-color: white;
+  width: 260px;
+  height: 260px;
+  padding: 10px;
+  border: 1px #0e2739 solid;
+  border-radius: 10px;
+}
+
+.menu_central__img__produtos {
+  background-color: white;
+  width: 260px;
+  height: 260px;
+  padding: 10px;
+  border: 1px #0e2739 solid;
+  border-radius: 10px;
+}
+
+.menu_central__button {
+  width: 280px;
+  height: 40px;
+  background-color: #ea6da3;
+  border-radius: 5px;
+  border: 1px #ce4e98 solid;
+  font-family: "Irish Grover", sans-serif;
+  color: #062338;
+  font-size: 20px;
+  align-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu_central__button:hover {
+  width: 280px;
+  height: 40px;
+  background-color: #e74a8e;
+  border-radius: 5px;
+  font-family: "Irish Grover", sans-serif;
+  color: #0e2739;
+  font-size: 20px;
+  align-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.formulario-editar-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #e4e0f5;
+  width: 100%;
+  height:fit-content;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-editar-container .conteudo-form {
+  display: flex;
+  border-radius: 8px;
+}
+
+.formulario-editar-container .titulo {
+  background-color: #b7c4ec;
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-style: italic;
+  font-family: "Irish Grover", sans-serif;
+  color: #0e2739;
+  text-shadow: 2px 2px #acb0e6;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px 10px 0px 0px;
+  
+  border-bottom: 0px;
+}
+
+.formulario-editar-container .id-label {
+  font-size: 18px;
+  font-style: italic;
+  font-family: "Irish Grover", sans-serif;
+  color: #0e2739;
+  text-shadow: 2px 2px #dfc4d2;
+  padding-left: 10px;
+}
+
+.formulario-editar-container .botao {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.conteudo-form-editar {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Bird Decor</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <header>
+    <img class="img_logo" src="../Assets/blue-bird-outline-vectors.png">
+    <a href="../index.html"><spam class="texto_logo"> Blue Bird Decor</spam></a>
+    <spam class="texto_nome_loja">Casa Decora</spam>
+  </header>
+  <main class="container">
+    <section class="container__menu"><br>
+      <div class="menu_item--top">
+        <a href="/html/cadastros_main.html" class="menu_texto">Cadastros</a> 
+      </div>
+      <div class="menu_item--down">
+        <a href="/html/buscar_produto.html" class="menu_texto">Buscar</a>    
+      </div>
+    </div>
+    </section>
+    <section class="container__conteudo">   
+      <div class="container_formulario_conteudo">
+        <div class="formulario_texto--h1">
+          Cadastrar categoria e subcategoria de produto
+        </div>
+        <form class="formulario_conteudo" id="cadastro-categoria">
+          <div class="formulario_conteudo__container_campos">
+            Categoria:
+            <input type="text" class="formulario_campos" id="categoria" size="25">
+          </div>
+          <div class="formulario_conteudo__container_campos">
+            <input type="submit" class="formulario_conteudo__botao_submit" id="botao-cad-categoria" value="cadastrar">
+          </div>
+        </form >
+          <div class="formulario_conteudo__line"></div>
+          <form class="formulario_conteudo" id="cadastro-subcategoria">
+            <div class="formulario_conteudo__container_campos">
+              Categoria:
+              <select class="formulario_campos" id="lista-categoria">
+                <option>Escolha uma categoria</option>
+              </select>
+            </div>
+            <div class="formulario_conteudo__container_campos">
+              Subcategoria:
+              <input type="text" class="formulario_campos" id="subcategoria" size="25">
+            </div>
+            <div class="formulario_conteudo__container_campos">
+              <input type="submit" class="formulario_conteudo__botao_submit" id="botao-subcategoria" value="cadastrar">
+            </div>
+          </form>
+      </div>
+      <table class="titulos_colunas_tabela">
+        <tr>
+          <th style="width: 15%"></th>
+          <th style="width: 15%">Id Categoria</th>
+          <th style="width: 15%">Categoria</th>
+          <th style="width: 5%"><img src="../Assets/Botao-excluir-02.png" width="20px" height="20px"></th>
+          <th style="width: 15%">Id Subcategoria</th>
+          <th style="width: 15%">Subcategoria</th>
+          <th style="width: 5%"><img src="../Assets/Botao-excluir-02.png" width="20px" height="20px"></th>
+          <th style="width: 15%"></th>
+        </tr>
+      </table>
+      <table class="tabela_conteudo" id="tabela-categoria">
+      </table>
+    </section>    
+  </main>
+  <script type="module" src="../js/cadastro-categoria-produto.js"></script>
+  <script type="module" src="../js/api.js"></script>
+  <script type="module" src="../js/ui.js"></script> 
+  
+  <footer>
+    <div>
+      Blue Bird Decor
+    </div>
+  </footer>
+</body>
+</html>
