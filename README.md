@@ -44,4 +44,6 @@
 ## �� Tecnologias
 <div>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+  <img src="https://img.shields.io/badge/HTML5%20-%20blue?style=for-the-badge&logo=HTML5">
+  <img src="https://img.shields.io/badge/CSS%20-%20orange?style=for-the-badge&logo=CSS">
 </div>
